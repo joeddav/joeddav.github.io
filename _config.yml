@@ -57,7 +57,7 @@ plugins:
 
 author:
   name   : "Joe Davison"
-  avatar : "/assets/images/bio-photo.jpg"
+  avatar : "/assets/images/profile_ireland_close_crop.jpg"
   bio    : "I'm a Research Engineer at Hugging Face 🤗"
   links:
     - label: "Twitter"
