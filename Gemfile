@@ -16,3 +16,4 @@ group :jekyll_plugins do
   gem "jekyll-algolia"
   gem 'jekyll-watch'
   gem 'minimal-mistakes-jekyll'
+end
