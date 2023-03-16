@@ -16,7 +16,8 @@
 title: Joe Davison
 email: joeddav@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Science at Hugging Face 🤗
+  ML & NLP Researcher
+baseurl: github.joeddav.io
 twitter_username: joeddav
 github_username: joeddav
 minimal_mistakes_skin: default
