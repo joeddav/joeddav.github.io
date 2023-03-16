@@ -16,8 +16,7 @@
 title: Joe Davison
 email: joeddav@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  ML & NLP Researcher
-baseurl: https://github.joeddav.io
+  ML and NLP Researcher
 twitter_username: joeddav
 github_username: joeddav
 minimal_mistakes_skin: default
@@ -55,6 +54,7 @@ plugins:
   - jekyll-feed
   - jemoji
   - jekyll-include-cache
+  - jekyll-latex
 
 author:
   name   : "Joe Davison"
