@@ -21,6 +21,8 @@ twitter_username: joeddav
 github_username: joeddav
 minimal_mistakes_skin: default
 search: false
+repository: "joeddav/joeddav.github.io"
+minimal_mistakes_skin: dark
 
 # Build settings
 markdown: kramdown
@@ -55,11 +57,13 @@ plugins:
   - jemoji
   - jekyll-include-cache
   - jekyll-latex
+  - jekyll-email-protect
 
 author:
   name   : "Joe Davison"
   avatar : "/assets/images/profile_ireland_close_crop.jpg"
   bio    : "NLP & ML Researcher"
+  email  : "joeddav@gmail.com" # supply here to hide from bots in html
   links:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
@@ -75,27 +79,28 @@ author:
     - label: "Scholar"
       icon: "fas fa-graduation-cap"
       url: "https://scholar.google.com/citations?user=WjatKb8AAAAJ"
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-open"
-      url: "mailto:joeddav@gmail.com"
+
+comments:
+  provider: "utterances"
+  utterances:
+    theme: "github-light" # "github-dark"
+    issue_term: "pathname"
+    label: "comment"
 
 footer:
   links:
-    # - label: "Twitter"
-    #   icon: "fab fa-fw fa-twitter-square"
-    #   url: "https://twitter.com/joeddav"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/joeddav"
     # - label: "LinkedIn"
     #   icon: "fab fa-fw fa-linkedin"
     #   url: "https://linkedin.com/in/joeddav"
     # - label: "GitHub"
     #   icon: "fab fa-fw fa-github"
     #   url: "https://github.com/joeddav"
-    # - label: "Scholar"
-    #   icon: "fas fa-graduation-cap"
-    #   url: "https://scholar.google.com/citations?user=WjatKb8AAAAJ"
-    # - label: "Email"
-    #   icon: "fas fa-fw fa-envelope-open"
-    #   url: "mailto:joeddav@gmail.com"
+    - label: "Scholar"
+      icon: "fas fa-graduation-cap"
+      url: "https://scholar.google.com/citations?user=WjatKb8AAAAJ"
 
 defaults:
   # _posts
@@ -104,11 +109,12 @@ defaults:
       type: posts
     values:
       layout: single
-      author_profile: false
+      author_profile: true
       read_time: true
       comments: true
       share: true
-      related: true
+      related: false
+      show_date: true
   # _pages
   - scope:
       path: "_pages"

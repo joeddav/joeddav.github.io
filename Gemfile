@@ -17,4 +17,5 @@ group :jekyll_plugins do
   gem 'jekyll-watch'
   gem 'minimal-mistakes-jekyll'
   gem 'jekyll-latex'
+  gem 'jekyll-email-protect'
 end
