@@ -5,20 +5,25 @@ layout: archive
 {{ content }}
 
 <p style='font-size: 13pt;'>
-    Hi, I'm Joe. I'm a machine learning researcher. I used to be a researcher at
+    Hi, I'm Joe. I'm an ML/NLP researcher and incoming PhD student at the University of Utah.
+    Here's my <a href="https://scholar.google.com/citations?user=WjatKb8AAAAJ">Google Scholar profile</a>.
+</p>
+
+<p style="font-size: 13pt;">
+    I used to be a member of the science team at
     <a href=https://huggingface.co target=_blank>Hugging Face</a>, an open source
     startup that develops state-of-the-art NLP and machine learning tools. I also
-    spent over a year as a Senior ML Scientist at
+    spent over a year as a Senior Machine Learning Scientist at
     <a href="https://envedabio.com">Enveda Biosciences</a>
-    where I brought my expertise in NLP and Transformers to
+    where I brought my Transformers expertise to
     problems like predicting full chemical structuress from mass spec.
 </p>
 
 <p style='font-size: 13pt;'>
-    Before joining Hugging Face, I completed my master's at Harvard in Data Science where I did research
+    I completed my master's in Data Science at Harvard in 2019 where I did research
     with <a href=http://rush-nlp.com/ target=_blank>Sasha Rush</a> (commonsense and NLP) and with 
     <a href=https://finale.seas.harvard.edu/ target=_blank>Finale Doshi-Velez</a> (Bayesian Neural Networks). During my
-    stint at Harvard, I interned with IBM Research where I conducted a project on disentanglement in VAEs.
+    stint at Harvard, I interned with IBM Research where I developed a novel approach to disentanglement in VAEs.
 </p>
 
 <p style='font-size: 13pt;'>
@@ -26,20 +31,36 @@ layout: archive
 </p>
 
 
-<br>
+
+<h2 class="archive__subtitle">News</h2>
+<table>
+    <tr>
+        <td style="border: none; font-size: 13pt; width: 120px; text-align: left; vertical-align: top ;padding-left: 0; padding-right: 0;">
+           2023-03-24
+        </td>
+        <td style="border: none; font-size: 13pt; text-align: left; vertical-align: top;">
+            I'm going back for my PhD! 🎓 <br><br>
+            I'm excited to announce that I'll be entering the PhD program at the Kahlert School of Computing
+            at the University of Utah, beginning in August 2023. I'll be working with
+            <a href="https://svivek.com/">Professor Vivek Srikumar</a> in the
+            <a href="http://nlp.cs.utah.edu/">Utah NLP group</a>.
+        </td>
+    </tr>
+</table>
+
 
 
 <h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
 
-<!-- {% if paginator %}
+{% if paginator %}
   {% assign posts = paginator.posts %}
 {% else %}
   {% assign posts = site.posts %}
-{% endif %} -->
+{% endif %}
 
 {% assign entries_layout = page.entries_layout | default: 'list' %}
 <div class="entries-{{ entries_layout }}">
-  {% for post in posts %}
+  {% for post in posts limit:1 %}
     {% include archive-single.html type=entries_layout %}
   {% endfor %}
 </div>
