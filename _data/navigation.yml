@@ -3,3 +3,4 @@ main:
     url: /posts/
   - title: "CV"
     url: /assets/pdfs/cv.pdf
+    newtab: true

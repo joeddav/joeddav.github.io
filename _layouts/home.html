@@ -6,7 +6,6 @@ layout: archive
 
 <p style='font-size: 13pt;'>
     Hi, I'm Joe. I'm an ML/NLP researcher and incoming PhD student at the University of Utah.
-    Here's my <a href="https://scholar.google.com/citations?user=WjatKb8AAAAJ">Google Scholar profile</a>.
 </p>
 
 <p style="font-size: 13pt;">
@@ -14,7 +13,7 @@ layout: archive
     <a href=https://huggingface.co target=_blank>Hugging Face</a>, an open source
     startup that develops state-of-the-art NLP and machine learning tools. I also
     spent over a year as a Senior Machine Learning Scientist at
-    <a href="https://envedabio.com">Enveda Biosciences</a>
+    <a href="https://envedabio.com" target="_blank">Enveda Biosciences</a>
     where I brought my Transformers expertise to
     problems like predicting full chemical structuress from mass spec.
 </p>
@@ -27,7 +26,7 @@ layout: archive
 </p>
 
 <p style='font-size: 13pt;'>
-    You can find more details about my background in my CV <a href="/assets/pdfs/cv.pdf">here</a>.
+    You can find more details about my background in <a href="/assets/pdfs/cv.pdf" target="_blank">my CV</a>.
 </p>
 
 
@@ -42,8 +41,8 @@ layout: archive
             I'm going back for my PhD! 🎓 <br><br>
             I'm excited to announce that I'll be entering the PhD program at the Kahlert School of Computing
             at the University of Utah, beginning in August 2023. I'll be working with
-            <a href="https://svivek.com/">Professor Vivek Srikumar</a> in the
-            <a href="http://nlp.cs.utah.edu/">Utah NLP group</a>.
+            <a href="https://svivek.com/" target="_blank">Professor Vivek Srikumar</a> in the
+            <a href="http://nlp.cs.utah.edu/" target="_blank">NLP group</a>.
         </td>
     </tr>
 </table>
@@ -60,7 +59,7 @@ layout: archive
 
 {% assign entries_layout = page.entries_layout | default: 'list' %}
 <div class="entries-{{ entries_layout }}">
-  {% for post in posts limit:1 %}
+  {% for post in posts limit:2 %}
     {% include archive-single.html type=entries_layout %}
   {% endfor %}
 </div>
