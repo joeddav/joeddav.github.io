@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Joe Davison
-email: joeddav@gmail.com
+email: joeddav@cs.utah.edu
 description: >- # this means to ignore newlines until "baseurl:"
   ML and NLP Researcher
 twitter_username: joeddav
@@ -63,7 +63,7 @@ author:
   name   : "Joe Davison"
   avatar : "/assets/images/profile_ireland_close_crop.jpg"
   bio    : "NLP & ML Researcher"
-  email  : "joeddav@gmail.com" # supply here to hide from bots in html
+  email  : "joeddav@utah.cs.edu" # supply here to hide from bots in html
   links:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
