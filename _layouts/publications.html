@@ -1,0 +1,14 @@
+---
+layout: default
+---
+
+<div id="main" role="main">
+    {% include sidebar.html %}
+
+    <div class="archive" style="font-size: 13pt">
+        {% unless page.header.overlay_color or page.header.overlay_image %}
+            <h1 id="page-title" class="page__title">{{ page.title }}</h1>
+        {% endunless %}
+        {{ content }}
+    </div>
+</div>
