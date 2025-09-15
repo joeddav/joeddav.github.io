@@ -33,8 +33,10 @@ paginate: 5 # amount of posts to show
 paginate_path: /page:num/
 timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
-include:
+# Only build the minimal homepage; do not process extra pages or posts
+exclude:
   - _pages
+  - _posts
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
@@ -74,7 +76,7 @@ author:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/joeddav"
-    - label: "<span style='padding-left: 2px; padding-right: 6px;'>🤗</span>Hub"
+    - label: "<span style='padding-left: 2px; padding-right: 6px;'>🤗</span> Hub"
       url: "https://huggingface.co/joeddav"
     - label: "Scholar"
       icon: "fas fa-graduation-cap"

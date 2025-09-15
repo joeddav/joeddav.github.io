@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ page.title | default: site.title }}</title>
+    <meta name="description" content="{{ site.description | default: site.title }}">
+    <style>
+      :root {
+        --bg: #0a0a0a;
+        --fg: #d8dadf;
+        --fg-strong: #ffffff;
+        --muted: #9aa3ab;
+        --accent: #39ff88; /* green accent similar to ssi.inc */
+        --accent-2: #a8ffcc;
+        --maxw: 740px;
+      }
+      html, body { height: 100%; }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--fg);
+        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+        line-height: 1.65;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+      .wrap {
+        max-width: var(--maxw);
+        margin: 8vh auto;
+        padding: 0 20px;
+      }
+      h1, h2, h3 { color: var(--fg-strong); margin: 0 0 24px; }
+      h1 { font-size: 28px; letter-spacing: .2px; }
+      p { margin: 0 0 16px; font-size: 16px; }
+      strong { color: var(--fg-strong); }
+      a { color: var(--accent); text-decoration: none; border-bottom: 1px solid rgba(57,255,136,.35); }
+      a:hover { color: var(--accent-2); border-bottom-color: currentColor; }
+      .social { margin-top: 32px; }
+      .social a { display: inline-block; margin: 10px 18px 0 0; }
+      footer { margin-top: 48px; color: var(--muted); font-size: 12px; }
+    </style>
+  </head>
+  <body>
+    <main class="wrap">
+      {{ content }}
+    </main>
+  </body>
+</html>
