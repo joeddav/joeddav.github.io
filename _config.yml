@@ -67,6 +67,9 @@ author:
   bio    : "NLP & ML Researcher"
   email  : "joeddav@utah.cs.edu" # supply here to hide from bots in html
   links:
+    - label: "Blog"
+      icon: "fas fa-fw fa-pen-nib"
+      url: "https://joeddav.github.io/posts/"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/joeddav"
@@ -91,6 +94,9 @@ comments:
 
 footer:
   links:
+    - label: "Blog"
+      icon: "fas fa-fw fa-pen-nib"
+      url: "https://joeddav.github.io/posts/"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/joeddav"
