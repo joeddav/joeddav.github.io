@@ -40,11 +40,15 @@
 
       header.site-header {
         display: grid;
-        grid-template-columns: minmax(0, 1fr) auto;
-        gap: 24px;
+        grid-template-columns: minmax(0, 1fr) 220px;
+        gap: 28px;
         align-items: start;
         padding-bottom: 22px;
         border-bottom: 1px solid var(--line);
+      }
+
+      .intro-copy {
+        min-width: 0;
       }
 
       .eyebrow {
@@ -93,11 +97,25 @@
       .link-row {
         display: flex;
         flex-wrap: wrap;
-        justify-content: flex-end;
+        justify-content: flex-start;
         gap: 8px 14px;
-        max-width: 260px;
-        padding-top: 6px;
+        margin-top: 18px;
         font-size: 14px;
+      }
+
+      .profile-photo {
+        margin: 4px 0 0;
+        width: 220px;
+      }
+
+      .profile-photo img {
+        display: block;
+        width: 100%;
+        aspect-ratio: 4 / 5;
+        object-fit: cover;
+        border: 1px solid var(--line);
+        border-radius: 6px;
+        background: #fff;
       }
 
       a {
@@ -308,6 +326,11 @@
         .link-row {
           justify-content: flex-start;
           max-width: none;
+        }
+
+        .profile-photo {
+          width: min(220px, 72vw);
+          margin-top: 10px;
         }
 
         .intro {
