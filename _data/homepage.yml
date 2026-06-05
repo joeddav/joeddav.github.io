@@ -139,12 +139,12 @@ misc:
     description: Patent publication related to mass-spectrometry-based molecular structure prediction.
     href: https://patents.google.com/patent/US20250189496A1
   - title: Zero-shot classification pipeline
-    kind: Tooling
+    kind: Open source
     year: 2020
     description: Transformers pipeline and task workflow for classifying text against arbitrary candidate labels.
     href: https://huggingface.co/tasks/zero-shot-classification
   - title: Zero-shot distillation
-    kind: Research project
+    kind: Open source
     year: 2021
     description: Self-distillation project for training smaller zero-shot classifiers from larger NLI models.
     href: https://github.com/huggingface/transformers-research-projects/tree/main/zero-shot-distillation
@@ -159,7 +159,7 @@ misc:
     description: Interactive Hugging Face Space for classifying text with arbitrary labels.
     href: https://huggingface.co/spaces/joeddav/zero-shot-demo
   - title: DEvol
-    kind: Project
+    kind: Open source
     year: 2017
     description: Early proof of concept for genetic neural architecture search.
     href: https://github.com/joeddav/devol
