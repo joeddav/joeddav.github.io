@@ -29,11 +29,13 @@ title: Joe Davison
     <h2 id="timeline-heading">Timeline</h2>
     <p>A compact version of the path so far.</p>
   </div>
-  <div class="rows">
+  <div class="timeline-list">
     {% for item in homepage.timeline %}
-      <article class="row">
-        <div class="date">{{ item.period }}</div>
-        <div>
+      <article class="timeline-entry">
+        <div class="timeline-period">{{ item.period }}</div>
+        <div class="timeline-axis" aria-hidden="true"></div>
+        <div class="timeline-badge" aria-hidden="true">{{ item.badge }}</div>
+        <div class="timeline-content">
           <h3 class="item-title">
             {% if item.href %}<a href="{{ item.href }}">{{ item.title }}</a>{% else %}{{ item.title }}{% endif %}
           </h3>

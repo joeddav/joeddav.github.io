@@ -20,31 +20,37 @@ timeline:
     subtitle: Staff AI/ML Engineer
     description: "Leading AI platform work for Ask BambooHR and shared production agent infrastructure: durable runtimes, tracing, observability, evals, and reliable tool use."
     href: https://www.bamboohr.com/
+    badge: BHR
   - period: 2023 - 2024
     title: University of Utah
     subtitle: Doctoral studies in computing and AI
     description: Spent a year in doctoral studies with Vivek Srikumar, focusing on NLP, machine learning, and language-model research. Ultimately decided a PhD wasn't the right path for me, so I left.
     href: https://svivek.com/
+    badge: UTAH
   - period: 2021 - 2022
     title: Enveda Biosciences
     subtitle: Senior Machine Learning Scientist
     description: Built Transformer training infrastructure and sequence-to-structure models for molecular identification from noisy MS/MS spectra.
     href: https://envedabio.com/
+    badge: ENV
   - period: 2020 - 2021
     title: Hugging Face
     subtitle: Research Engineer, Science Team
     description: Worked on Transformers and Datasets, zero-shot classification tooling, public models, demos, and research infrastructure.
     href: https://huggingface.co/joeddav
+    badge: HF
   - period: 2018 - 2020
     title: Harvard and IBM Research
     subtitle: MS Data Science; MIT-IBM Watson AI Lab intern
     description: Studied data science at Harvard and worked on cross-population variational autoencoders for isolating latent structure across distributions.
     href: https://rush-nlp.com/
+    badge: H+IBM
   - period: 2015 - 2018
     title: BYU, Microsoft, and early ML projects
     subtitle: BS Computer Science
     description: Built early machine-learning and software projects, including CNTK-R, MMLSpark NLP components, get_smarties, and devol.
     href: https://github.com/joeddav/devol
+    badge: BYU
 
 writing:
   - title: Zero-Shot Learning in Modern NLP
@@ -67,10 +73,11 @@ writing:
     platform: Reading group write-up
     href: https://github.com/huggingface/awesome-papers/discussions/8
     description: Hugging Face reading group discussion and Colab notes on poisoned pretrained model weights.
-  - title: Twitter/X thread
+  - title: Language model prompting and zero/few-shot learning
     year: 2021
     platform: X/Twitter
     href: https://x.com/joeddav/status/1390731854907641863?s=20
+    description: Thread explaining prompting and zero/few-shot performance across NLP benchmarks.
   - title: No, Machine Learning is not just glorified Statistics
     year: 2018
     platform: Medium
@@ -115,9 +122,10 @@ publications:
         href: https://patents.google.com/patent/US20250189496A1
   - title: Multi-scale sinusoidal embeddings enable learning on high resolution mass spectrometry data
     authors: Gennady Voronov, Rose Lightheart, Joe Davison, Christoph A. Krettler, David Healey, Thomas Butler
-    venue: arXiv
+    venue: ICLR 2023 MLDD Workshop Oral
     year: 2022
-    href: https://arxiv.org/abs/2207.02980
+    href: https://iclr.cc/virtual/2023/12949
+    note: 7 Semantic Scholar citations
 
 misc:
   - title: Zero-shot classification pipeline
@@ -140,7 +148,7 @@ misc:
     year: 2020
     description: Interactive Hugging Face Space for classifying text with arbitrary labels.
     href: https://huggingface.co/spaces/joeddav/zero-shot-demo
-  - title: Dabble / devol
+  - title: DEvol
     kind: Project
     year: 2017
     description: Early proof of concept for genetic neural architecture search.

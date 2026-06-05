@@ -145,6 +145,77 @@
         gap: 0;
       }
 
+      .timeline-list {
+        position: relative;
+      }
+
+      .timeline-list::before {
+        content: "";
+        position: absolute;
+        top: 13px;
+        bottom: 13px;
+        left: 134px;
+        width: 1px;
+        background: var(--line);
+      }
+
+      .timeline-entry {
+        position: relative;
+        display: grid;
+        grid-template-columns: 108px 24px 66px minmax(0, 1fr);
+        column-gap: 14px;
+        padding: 8px 0 18px;
+      }
+
+      .timeline-period {
+        padding-top: 5px;
+        color: var(--muted);
+        font-size: 13px;
+        text-align: right;
+      }
+
+      .timeline-axis {
+        position: relative;
+      }
+
+      .timeline-axis::after {
+        content: "";
+        position: absolute;
+        top: 8px;
+        left: 50%;
+        width: 9px;
+        height: 9px;
+        border: 2px solid var(--line);
+        border-radius: 50%;
+        background: var(--bg);
+        transform: translateX(-50%);
+      }
+
+      .timeline-entry:first-child .timeline-axis::after {
+        border-color: var(--accent);
+      }
+
+      .timeline-badge {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 54px;
+        height: 54px;
+        border: 1px solid var(--line);
+        border-radius: 6px;
+        background: #fff;
+        color: var(--muted);
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 1.1;
+        text-align: center;
+      }
+
+      .timeline-content {
+        min-width: 0;
+        padding-top: 3px;
+      }
+
       .row {
         display: grid;
         grid-template-columns: 140px minmax(0, 1fr);
@@ -255,6 +326,47 @@
 
         .date,
         .kind {
+          padding-top: 0;
+        }
+
+        .timeline-list::before {
+          top: 11px;
+          bottom: 11px;
+          left: 9px;
+        }
+
+        .timeline-entry {
+          grid-template-columns: 20px minmax(0, 1fr);
+          grid-template-areas:
+            "axis period"
+            "axis content";
+          column-gap: 12px;
+          row-gap: 4px;
+          padding: 8px 0 17px;
+        }
+
+        .timeline-period {
+          grid-area: period;
+          padding-top: 0;
+          text-align: left;
+        }
+
+        .timeline-axis {
+          grid-area: axis;
+        }
+
+        .timeline-axis::after {
+          top: 2px;
+          width: 8px;
+          height: 8px;
+        }
+
+        .timeline-badge {
+          display: none;
+        }
+
+        .timeline-content {
+          grid-area: content;
           padding-top: 0;
         }
 
