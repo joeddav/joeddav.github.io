@@ -44,16 +44,16 @@ timeline:
     badge: HF
     logo: /assets/images/logos/huggingface.svg
   - period: 2018 - 2020
-    title: Harvard and IBM Research
-    subtitle: MS Data Science; MIT-IBM Watson AI Lab intern
-    description: Studied data science at Harvard and worked on cross-population variational autoencoders for isolating latent structure across distributions.
+    title: Harvard
+    subtitle: MS Data Science
+    description: Studied data science at Harvard and interned at IBM Research / MIT-IBM Watson AI Lab, working on cross-population variational autoencoders for isolating latent structure across distributions.
     href: https://rush-nlp.com/
     badge: H+IBM
     logo: /assets/images/logos/harvard.svg
   - period: 2015 - 2018
-    title: BYU, Microsoft, and early ML projects
+    title: BYU
     subtitle: BS Computer Science
-    description: Built early machine-learning and software projects, including CNTK-R, MMLSpark NLP components, get_smarties, and devol.
+    description: Studied computer science at BYU, interned at Microsoft on CNTK, and built early machine-learning projects including MMLSpark NLP components, get_smarties, and devol.
     href: https://github.com/joeddav/devol
     badge: BYU
     logo: /assets/images/logos/byu.svg
@@ -128,6 +128,11 @@ publications:
     note: 7 citations
 
 misc:
+  - title: AI Utah 100
+    kind: Recognition
+    year: 2024
+    description: Named to the inaugural AI Utah 100 list as a Builder.
+    href: https://www.linkedin.com/in/joeddav
   - title: Patent US20250189496A1
     kind: Patent
     year: 2025
