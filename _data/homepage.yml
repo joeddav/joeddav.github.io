@@ -148,9 +148,9 @@ misc:
     year: 2021
     description: Self-distillation project for training smaller zero-shot classifiers from larger NLI models.
     href: https://github.com/huggingface/transformers-research-projects/tree/main/zero-shot-distillation
-  - title: Public Hugging Face models
+  - title: Custom NLI and zero shot models
     kind: Models
-    year: 2020 - present
+    year: 2020
     description: Public zero-shot and student classifiers on the Hugging Face Hub, including BART, XLM-R, and DistilBERT models.
     href: https://huggingface.co/joeddav
   - title: Zero-shot classification demo

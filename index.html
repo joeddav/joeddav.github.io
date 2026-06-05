@@ -107,7 +107,7 @@ title: Joe Davison
   <div class="rows">
     {% for item in homepage.misc %}
       <article class="row">
-        <div class="kind">{{ item.year }} / {{ item.kind }}</div>
+        <div class="kind">{{ item.year }}{% if item.kind %}, {{ item.kind }}{% endif %}</div>
         <div>
           <h3 class="item-title">
             {% if item.href %}<a href="{{ item.href }}">{{ item.title }}</a>{% else %}{{ item.title }}{% endif %}
