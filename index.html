@@ -1,30 +1,104 @@
 ---
-# You don't need to edit this file, it's empty on purpose.
-# Edit theme's home layout instead if you wanna make some changes
-# See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: minimal
 title: Joe Davison
 ---
 
-<h1>{{ site.title }}</h1>
+{% assign homepage = site.data.homepage %}
 
-Hi, I'm <strong>Joe</strong>. I'm an AI/ML engineer and researcher focused on language models, reasoning systems, and reliable agents. I'm especially interested in integrated memory, ultra-long context, inference scaling, RLVR, synthetic data generation, and self-play.
-<br>
-<br>
-I lead AI work at <strong>BambooHR</strong>, where I'm helping ship the next generation of Ask BambooHR. Previously I was on the <strong>Hugging Face</strong> science team&mdash;you may know my work if you've ever used the <a href="https://huggingface.co/tasks/zero-shot-classification" target="_blank">zero-shot classification pipeline</a> or the research guide on <a href="https://huggingface.co/docs/transformers/en/perplexity" target="_blank">calculating fixed-length model perplexity</a>. I also spent time as a Senior ML Scientist at <strong>Enveda Biosciences</strong>, applying Transformers to mass-spec structure prediction for drug discovery.
-<br>
-<br>
-I earned an MS in Data Science from <strong>Harvard</strong>, working with faculty including <a href="https://rush-nlp.com/" target="_blank">Sasha Rush</a> and <a href="https://finale.seas.harvard.edu/" target="_blank">Finale Doshi-Velez</a>, and spent a year in doctoral studies at the <strong>University of Utah</strong> with <a href="https://svivek.com/" target="_blank" rel="noopener">Vivek Srikumar</a>.
-<br>
-<br>
-The work that excites me most sits at the intersection of research and systems: models and agents that can search, remember, reason over long contexts, and improve through generated experience.
-<br>
-<br>
-Scaling wins in the end.
+<header class="site-header">
+  <div>
+    <p class="eyebrow">AI / ML engineer and researcher</p>
+    <h1>Joe Davison</h1>
+    <p class="intro">
+      I work on language models, reasoning systems, reliable agents, and the infrastructure needed to evaluate and ship them.
+    </p>
+    <p class="intro">
+      I lead AI platform work at BambooHR. Previously I worked on the Hugging Face science team, applied Transformers to mass-spec structure prediction at Enveda Biosciences, studied data science at Harvard, and spent a year in doctoral studies at the University of Utah.
+    </p>
+  </div>
 
+  <nav class="link-row" aria-label="Primary links">
+    {% for link in homepage.links %}
+      <a href="{{ link.href }}">{{ link.label }}</a>
+    {% endfor %}
+  </nav>
+</header>
 
-<div class="social">
-  {% for link in site.author.links %}
-    {% if link.url %}<a href="{{ link.url }}" target="_blank" rel="noopener">{{ link.label | strip_html }}</a>{% endif %}
-  {% endfor %}
-</div>
+<section aria-labelledby="timeline-heading">
+  <div class="section-title">
+    <h2 id="timeline-heading">Timeline</h2>
+    <p>A compact version of the path so far.</p>
+  </div>
+  <div class="rows">
+    {% for item in homepage.timeline %}
+      <article class="row">
+        <div class="date">{{ item.period }}</div>
+        <div>
+          <h3 class="item-title">
+            {% if item.href %}<a href="{{ item.href }}">{{ item.title }}</a>{% else %}{{ item.title }}{% endif %}
+          </h3>
+          {% if item.subtitle %}<p class="subtitle">{{ item.subtitle }}</p>{% endif %}
+          {% if item.description %}<p class="description">{{ item.description }}</p>{% endif %}
+        </div>
+      </article>
+    {% endfor %}
+  </div>
+</section>
+
+<section aria-labelledby="selected-work-heading">
+  <div class="section-title">
+    <h2 id="selected-work-heading">Selected work</h2>
+    <p>Papers, tooling, documentation, and projects that have been useful outside the immediate context where they were made.</p>
+  </div>
+  <div class="rows">
+    {% for item in homepage.selected_work %}
+      <article class="row">
+        <div class="kind">{{ item.year }} / {{ item.kind }}</div>
+        <div>
+          <h3 class="item-title">
+            {% if item.href %}<a href="{{ item.href }}">{{ item.title }}</a>{% else %}{{ item.title }}{% endif %}
+          </h3>
+          {% if item.description %}<p class="description">{{ item.description }}</p>{% endif %}
+          {% if item.meta %}<span class="meta">{{ item.meta }}</span>{% endif %}
+        </div>
+      </article>
+    {% endfor %}
+  </div>
+</section>
+
+<section aria-labelledby="writing-heading">
+  <div class="section-title">
+    <h2 id="writing-heading">Writing</h2>
+    <p>A few posts, docs, and demos across platforms. The complete blog is at <a href="https://joeddav.github.io/blog/">joeddav.github.io/blog</a>.</p>
+  </div>
+  <ul class="compact-list">
+    {% for item in homepage.writing %}
+      <li>
+        <h3 class="item-title"><a href="{{ item.href }}">{{ item.title }}</a></h3>
+        <p class="description">{{ item.year }} / {{ item.platform }}{% if item.description %} - {{ item.description }}{% endif %}</p>
+      </li>
+    {% endfor %}
+  </ul>
+</section>
+
+<section aria-labelledby="publications-heading">
+  <div class="section-title">
+    <h2 id="publications-heading">Publications</h2>
+    <p>Selected papers. Citation counts are intentionally approximate; see <a href="https://scholar.google.com/citations?user=WjatKb8AAAAJ">Google Scholar</a> for the changing record.</p>
+  </div>
+  <div class="rows">
+    {% for item in homepage.publications %}
+      <article class="row">
+        <div class="date">{{ item.year }}</div>
+        <div>
+          <h3 class="item-title">
+            {% if item.href %}<a href="{{ item.href }}">{{ item.title }}</a>{% else %}{{ item.title }}{% endif %}
+          </h3>
+          {% if item.authors %}<p class="authors">{{ item.authors }}</p>{% endif %}
+          <p class="description">{{ item.venue }}</p>
+          {% if item.note %}<span class="note">{{ item.note }}</span>{% endif %}
+        </div>
+      </article>
+    {% endfor %}
+  </div>
+</section>
