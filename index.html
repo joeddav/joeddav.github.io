@@ -34,7 +34,13 @@ title: Joe Davison
       <article class="timeline-entry">
         <div class="timeline-period">{{ item.period }}</div>
         <div class="timeline-axis" aria-hidden="true"></div>
-        <div class="timeline-badge" aria-hidden="true">{{ item.badge }}</div>
+        <div class="timeline-badge" aria-hidden="true">
+          {% if item.logo %}
+            <img src="{{ item.logo }}" alt="">
+          {% else %}
+            {{ item.badge }}
+          {% endif %}
+        </div>
         <div class="timeline-content">
           <h3 class="item-title">
             {% if item.href %}<a href="{{ item.href }}">{{ item.title }}</a>{% else %}{{ item.title }}{% endif %}
@@ -51,14 +57,17 @@ title: Joe Davison
   <div class="section-title">
     <h2 id="writing-heading">Writing</h2>
   </div>
-  <ul class="compact-list">
+  <div class="rows">
     {% for item in homepage.writing %}
-      <li>
-        <h3 class="item-title"><a href="{{ item.href }}">{{ item.title }}</a></h3>
-        <p class="description">{{ item.year }} / {{ item.platform }}{% if item.description %} - {{ item.description }}{% endif %}</p>
-      </li>
+      <article class="row">
+        <div class="kind">{{ item.year }} / {{ item.platform }}</div>
+        <div>
+          <h3 class="item-title"><a href="{{ item.href }}">{{ item.title }}</a></h3>
+          {% if item.description %}<p class="description">{{ item.description }}</p>{% endif %}
+        </div>
+      </article>
     {% endfor %}
-  </ul>
+  </div>
 </section>
 
 <section aria-labelledby="publications-heading">

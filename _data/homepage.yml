@@ -21,36 +21,42 @@ timeline:
     description: "Leading AI platform work for Ask BambooHR and shared production agent infrastructure: durable runtimes, tracing, observability, evals, and reliable tool use."
     href: https://www.bamboohr.com/
     badge: BHR
+    logo: /assets/images/logos/bamboohr.svg
   - period: 2023 - 2024
     title: University of Utah
     subtitle: Doctoral studies in computing and AI
     description: Spent a year in doctoral studies with Vivek Srikumar, focusing on NLP, machine learning, and language-model research. Ultimately decided a PhD wasn't the right path for me, so I left.
     href: https://svivek.com/
     badge: UTAH
+    logo: /assets/images/logos/utah.svg
   - period: 2021 - 2022
     title: Enveda Biosciences
     subtitle: Senior Machine Learning Scientist
     description: Built Transformer training infrastructure and sequence-to-structure models for molecular identification from noisy MS/MS spectra.
     href: https://envedabio.com/
     badge: ENV
+    logo: /assets/images/logos/enveda.svg
   - period: 2020 - 2021
     title: Hugging Face
     subtitle: Research Engineer, Science Team
     description: Worked on Transformers and Datasets, zero-shot classification tooling, public models, demos, and research infrastructure.
     href: https://huggingface.co/joeddav
     badge: HF
+    logo: /assets/images/logos/huggingface.svg
   - period: 2018 - 2020
     title: Harvard and IBM Research
     subtitle: MS Data Science; MIT-IBM Watson AI Lab intern
     description: Studied data science at Harvard and worked on cross-population variational autoencoders for isolating latent structure across distributions.
     href: https://rush-nlp.com/
     badge: H+IBM
+    logo: /assets/images/logos/harvard.svg
   - period: 2015 - 2018
     title: BYU, Microsoft, and early ML projects
     subtitle: BS Computer Science
     description: Built early machine-learning and software projects, including CNTK-R, MMLSpark NLP components, get_smarties, and devol.
     href: https://github.com/joeddav/devol
     badge: BYU
+    logo: /assets/images/logos/byu.svg
 
 writing:
   - title: Zero-Shot Learning in Modern NLP
@@ -82,10 +88,6 @@ writing:
     year: 2018
     platform: Medium
     href: https://medium.com/data-science/no-machine-learning-is-not-just-glorified-statistics-26d3952234e3
-  - title: "Deep Learning est mort. Vive Differentiable Programming!"
-    year: 2018
-    platform: Medium
-    href: https://medium.com/techburst/deep-learning-est-mort-vive-differentiable-programming-5060d3c55074
 
 publications:
   - title: Commonsense Knowledge Mining from Pretrained Models
@@ -99,6 +101,7 @@ publications:
     venue: NeurIPS Bayesian Deep Learning Workshop
     year: 2019
     href: http://bayesiandeeplearning.org/2019/papers/96.pdf
+    note: 3 citations
   - title: "Transformers: State-of-the-Art Natural Language Processing"
     authors: Thomas Wolf et al.
     venue: EMNLP Demo
@@ -117,17 +120,19 @@ publications:
     year: 2023
     href: https://doi.org/10.26434/chemrxiv-2023-vsmpx-v4
     note: 35+ citations
-    links:
-      - label: Patent US20250189496A1
-        href: https://patents.google.com/patent/US20250189496A1
   - title: Multi-scale sinusoidal embeddings enable learning on high resolution mass spectrometry data
     authors: Gennady Voronov, Rose Lightheart, Joe Davison, Christoph A. Krettler, David Healey, Thomas Butler
     venue: ICLR 2023 MLDD Workshop Oral
     year: 2022
     href: https://iclr.cc/virtual/2023/12949
-    note: 7 Semantic Scholar citations
+    note: 7 citations
 
 misc:
+  - title: Patent US20250189496A1
+    kind: Patent
+    year: 2025
+    description: Patent publication related to mass-spectrometry-based molecular structure prediction.
+    href: https://patents.google.com/patent/US20250189496A1
   - title: Zero-shot classification pipeline
     kind: Tooling
     year: 2020
