@@ -23,7 +23,7 @@ timeline:
   - period: 2023 - 2024
     title: University of Utah
     subtitle: Doctoral studies in computing and AI
-    description: Spent a year in doctoral studies with Vivek Srikumar, focusing on NLP, machine learning, and language-model research.
+    description: Spent a year in doctoral studies with Vivek Srikumar, focusing on NLP, machine learning, and language-model research. Ultimately decided a PhD wasn't the right path for me, so I left.
     href: https://svivek.com/
   - period: 2021 - 2022
     title: Enveda Biosciences
@@ -46,75 +46,39 @@ timeline:
     description: Built early machine-learning and software projects, including CNTK-R, MMLSpark NLP components, get_smarties, and devol.
     href: https://github.com/joeddav/devol
 
-selected_work:
-  - title: Commonsense Knowledge Mining from Pretrained Models
-    kind: Paper
-    year: 2019
-    description: EMNLP oral paper on extracting commonsense knowledge from pretrained language models.
-    href: https://aclanthology.org/D19-1109/
-    meta: 420+ citations
-  - title: Transformers
-    kind: Open source / paper
-    year: 2020
-    description: Contributed to the Hugging Face Transformers library and EMNLP Demo paper.
-    href: https://aclanthology.org/2020.emnlp-demos.6/
-    meta: EMNLP Best Demo Award; 14,000+ citations
-  - title: Datasets
-    kind: Open source / paper
-    year: 2021
-    description: Helped build reusable data loading and sharing infrastructure for NLP and evaluation workflows.
-    href: https://aclanthology.org/2021.emnlp-demo.21/
-    meta: EMNLP Best Demo Award; 900+ citations
-  - title: MS2Mol
-    kind: Paper
-    year: 2023
-    description: Transformer model for molecular structure prediction from mass spectra.
-    href: https://doi.org/10.26434/chemrxiv-2023-vsmpx-v4
-    meta: 35+ citations
-  - title: Zero-Shot Learning in Modern NLP
-    kind: Writing / tooling
-    year: 2020
-    description: Blog post and practical guide to zero-shot text classification with modern NLP models.
-    href: https://joeddav.github.io/blog/2020/05/29/ZSL.html
-    meta: Cited in academic literature
-  - title: Fixed-length model perplexity
-    kind: Documentation
-    year: 2020
-    description: Hugging Face guide for calculating perplexity with fixed-length language models.
-    href: https://huggingface.co/docs/transformers/en/perplexity
-  - title: devol
-    kind: Project
-    year: 2017
-    description: Early proof of concept for genetic neural architecture search.
-    href: https://github.com/joeddav/devol
-    meta: 951 GitHub stars
-  - title: Zero-shot classification tools
-    kind: Tooling / demo
-    year: 2020
-    description: Transformers pipeline, task page, public models, and demo work for zero-shot text classification.
-    href: https://huggingface.co/tasks/zero-shot-classification
-
 writing:
   - title: Zero-Shot Learning in Modern NLP
     year: 2020
-    platform: Joe Davison Blog
+    platform: Blog post
     href: https://joeddav.github.io/blog/2020/05/29/ZSL.html
-    description: Practical methods for text classification without annotated data.
+    description: Practical methods for text classification without annotated data; cited in academic literature.
   - title: "REALM: Knowledge and Transformers"
     year: 2020
-    platform: Joe Davison Blog
+    platform: Blog post
     href: https://joeddav.github.io/blog/2020/03/03/REALM.html
     description: Notes on retrieval-augmented language model pretraining.
-  - title: Calculating fixed-length model perplexity
+  - title: Perplexity of fixed-length models
     year: 2020
     platform: Hugging Face Docs
     href: https://huggingface.co/docs/transformers/en/perplexity
     description: Reference guide for evaluating causal language models with fixed context windows.
-  - title: Zero-shot classification demo
+  - title: "Attacking Bert: Weight Poisoning Attacks on Pre-Trained Models"
     year: 2020
-    platform: Hugging Face Spaces
-    href: https://huggingface.co/spaces/joeddav/zero-shot-demo
-    description: Interactive demo for classifying text with arbitrary labels.
+    platform: Reading group write-up
+    href: https://github.com/huggingface/awesome-papers/discussions/8
+    description: Hugging Face reading group discussion and Colab notes on poisoned pretrained model weights.
+  - title: Twitter/X thread
+    year: 2021
+    platform: X/Twitter
+    href: https://x.com/joeddav/status/1390731854907641863?s=20
+  - title: No, Machine Learning is not just glorified Statistics
+    year: 2018
+    platform: Medium
+    href: https://medium.com/data-science/no-machine-learning-is-not-just-glorified-statistics-26d3952234e3
+  - title: "Deep Learning est mort. Vive Differentiable Programming!"
+    year: 2018
+    platform: Medium
+    href: https://medium.com/techburst/deep-learning-est-mort-vive-differentiable-programming-5060d3c55074
 
 publications:
   - title: Commonsense Knowledge Mining from Pretrained Models
@@ -146,8 +110,39 @@ publications:
     year: 2023
     href: https://doi.org/10.26434/chemrxiv-2023-vsmpx-v4
     note: 35+ citations
+    links:
+      - label: Patent US20250189496A1
+        href: https://patents.google.com/patent/US20250189496A1
   - title: Multi-scale sinusoidal embeddings enable learning on high resolution mass spectrometry data
     authors: Gennady Voronov, Rose Lightheart, Joe Davison, Christoph A. Krettler, David Healey, Thomas Butler
     venue: arXiv
     year: 2022
     href: https://arxiv.org/abs/2207.02980
+
+misc:
+  - title: Zero-shot classification pipeline
+    kind: Tooling
+    year: 2020
+    description: Transformers pipeline and task workflow for classifying text against arbitrary candidate labels.
+    href: https://huggingface.co/tasks/zero-shot-classification
+  - title: Zero-shot distillation
+    kind: Research project
+    year: 2021
+    description: Self-distillation project for training smaller zero-shot classifiers from larger NLI models.
+    href: https://github.com/huggingface/transformers-research-projects/tree/main/zero-shot-distillation
+  - title: Public Hugging Face models
+    kind: Models
+    year: 2020 - present
+    description: Public zero-shot and student classifiers on the Hugging Face Hub, including BART, XLM-R, and DistilBERT models.
+    href: https://huggingface.co/joeddav
+  - title: Zero-shot classification demo
+    kind: Demo
+    year: 2020
+    description: Interactive Hugging Face Space for classifying text with arbitrary labels.
+    href: https://huggingface.co/spaces/joeddav/zero-shot-demo
+  - title: Dabble / devol
+    kind: Project
+    year: 2017
+    description: Early proof of concept for genetic neural architecture search.
+    href: https://github.com/joeddav/devol
+    meta: 951 GitHub stars

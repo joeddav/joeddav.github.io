@@ -45,31 +45,9 @@ title: Joe Davison
   </div>
 </section>
 
-<section aria-labelledby="selected-work-heading">
-  <div class="section-title">
-    <h2 id="selected-work-heading">Selected work</h2>
-    <p>Papers, tooling, documentation, and projects that have been useful outside the immediate context where they were made.</p>
-  </div>
-  <div class="rows">
-    {% for item in homepage.selected_work %}
-      <article class="row">
-        <div class="kind">{{ item.year }} / {{ item.kind }}</div>
-        <div>
-          <h3 class="item-title">
-            {% if item.href %}<a href="{{ item.href }}">{{ item.title }}</a>{% else %}{{ item.title }}{% endif %}
-          </h3>
-          {% if item.description %}<p class="description">{{ item.description }}</p>{% endif %}
-          {% if item.meta %}<span class="meta">{{ item.meta }}</span>{% endif %}
-        </div>
-      </article>
-    {% endfor %}
-  </div>
-</section>
-
 <section aria-labelledby="writing-heading">
   <div class="section-title">
     <h2 id="writing-heading">Writing</h2>
-    <p>A few posts, docs, and demos across platforms. The complete blog is at <a href="https://joeddav.github.io/blog/">joeddav.github.io/blog</a>.</p>
   </div>
   <ul class="compact-list">
     {% for item in homepage.writing %}
@@ -96,7 +74,35 @@ title: Joe Davison
           </h3>
           {% if item.authors %}<p class="authors">{{ item.authors }}</p>{% endif %}
           <p class="description">{{ item.venue }}</p>
-          {% if item.note %}<span class="note">{{ item.note }}</span>{% endif %}
+          {% if item.note or item.links %}
+            <div class="note-row">
+              {% if item.note %}<span class="note">{{ item.note }}</span>{% endif %}
+              {% for link in item.links %}
+                <a class="note" href="{{ link.href }}">{{ link.label }}</a>
+              {% endfor %}
+            </div>
+          {% endif %}
+        </div>
+      </article>
+    {% endfor %}
+  </div>
+</section>
+
+<section aria-labelledby="misc-heading">
+  <div class="section-title">
+    <h2 id="misc-heading">Misc.</h2>
+    <p>Useful projects, demos, and models that do not fit cleanly into papers or writing.</p>
+  </div>
+  <div class="rows">
+    {% for item in homepage.misc %}
+      <article class="row">
+        <div class="kind">{{ item.year }} / {{ item.kind }}</div>
+        <div>
+          <h3 class="item-title">
+            {% if item.href %}<a href="{{ item.href }}">{{ item.title }}</a>{% else %}{{ item.title }}{% endif %}
+          </h3>
+          {% if item.description %}<p class="description">{{ item.description }}</p>{% endif %}
+          {% if item.meta %}<span class="meta">{{ item.meta }}</span>{% endif %}
         </div>
       </article>
     {% endfor %}
