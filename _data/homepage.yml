@@ -79,11 +79,11 @@ writing:
     platform: Reading group write-up
     href: https://github.com/huggingface/awesome-papers/discussions/8
     description: Hugging Face reading group discussion and Colab notes on poisoned pretrained model weights.
-  - title: Language model prompting and zero/few-shot learning
+  - title: Introductory explainer thread on prompting
     year: 2021
     platform: X/Twitter
     href: https://x.com/joeddav/status/1390731854907641863?s=20
-    description: Thread explaining prompting and zero/few-shot performance across NLP benchmarks.
+    description: A 2021 thread on prompt-based language model use, written before RLHF-tuned chat models popularized the interface.
   - title: No, Machine Learning is not just glorified Statistics
     year: 2018
     platform: Medium
