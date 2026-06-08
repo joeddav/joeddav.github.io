@@ -138,6 +138,11 @@ misc:
     year: 2025
     description: Patent publication related to mass-spectrometry-based molecular structure prediction.
     href: https://patents.google.com/patent/US20250189496A1
+  - title: Deriving value from NLP and Transformers
+    kind: Podcast
+    year: 2021
+    description: AI & U episode on NLP, Transformers, and semantic understanding.
+    href: https://aiandu.fireside.fm/1
   - title: Zero-shot classification pipeline
     kind: Open source
     year: 2020
