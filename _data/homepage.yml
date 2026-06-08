@@ -128,6 +128,16 @@ publications:
     note: 7 citations
 
 misc:
+  - title: Alien Physics Lab
+    kind: Open source
+    year: 2026
+    description: Small RLVR-style playground for training agents to run experiments, reason from noisy measurements, and recover hidden physical parameters with verifiable rewards.
+    href: https://github.com/joeddav/alien-physics-lab
+  - title: Sparse decode experiments & kernels
+    kind: Open source
+    year: 2026
+    description: Training-free sparse attention and KV-cache routing experiments for long-context LLM decode, including a from-scratch Triton kernel and documented negative results.
+    href: https://github.com/joeddav/triton-sparse-decode
   - title: AI Utah 100
     kind: Recognition
     year: 2024
