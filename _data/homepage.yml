@@ -9,7 +9,7 @@ links:
     href: https://huggingface.co/joeddav
   - label: LinkedIn
     href: https://linkedin.com/in/joeddav
-  - label: X/Twitter
+  - label: X
     href: https://twitter.com/joeddav
   - label: Resume
     href: /assets/pdfs/resume.pdf
@@ -81,7 +81,7 @@ writing:
     description: Hugging Face reading group discussion and Colab notes on poisoned pretrained model weights.
   - title: Introductory explainer thread on prompting
     year: 2021
-    platform: X/Twitter
+    platform: X
     href: https://x.com/joeddav/status/1390731854907641863?s=20
     description: A 2021 thread on prompt-based language model use, written before RLHF-tuned chat models popularized the interface.
   - title: No, Machine Learning is not just glorified Statistics
